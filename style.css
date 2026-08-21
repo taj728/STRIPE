@@ -19,6 +19,7 @@
   --color-icon-bg: #f3f2ff;
   --color-orange: #d97706;
   --color-temp: #8293b0;
+  --background-color: #f8fafd;
   font-family:
     system-ui,
     -apple-system,
@@ -1149,8 +1150,8 @@
   display: grid;
   grid-template-columns: repeat(12, 1fr);
   column-gap: 16px;
-  border-top: 1px solid var(--color-border);
-  border-bottom: 1px solid var(--color-border);
+  border-top: 1px dotted var(--color-border);
+  border-bottom: 1px dotted var(--color-border);
 }
 .c {
   font-size: 16px;
@@ -1164,12 +1165,12 @@
   padding-bottom: 64px;
   padding-top: 64px;
   padding-bottom: 64px;
-  border-right: 1px solid var(--color-border);
+  border-right: 1px dotted var(--color-border);
 }
 #secondcol {
   grid-column: 4/7;
   padding-top: 64px;
-  border-right: 1px solid var(--color-border);
+  border-right: 1px dotted var(--color-border);
   padding-bottom: 64px;
 }
 #secondcol #row1 {
@@ -1201,7 +1202,7 @@
   grid-column: 7/10;
   padding-top: 64px;
   padding-bottom: 64px;
-  border-right: 1px solid var(--color-border);
+  border-right: 1px dotted var(--color-border);
 }
 
 #thirdcol #row1 {
@@ -1261,5 +1262,29 @@
 
 #footer2 {
   padding: 24px 32px 16px 0px;
+}
+
+.footer-bottom {
+  display: flex;
+  justify-content: space-between;
+  padding: 24px 32px 16px 0px;
+}
+#copyright {
+  padding: 0 16px;
+  font-size: 16px;
+}
+#language_select {
+  margin: 16px 0px 16px 16px;
+  border: none;
+  background-color: white;
+  display: flex;
+  gap: 8px;
+  color: var(--color-purple);
+  font-size: 16px;
+}
+
+#part2,
+#part6 {
+  background-color: var(--background-color);
 }
 /* #endregion section5 */
