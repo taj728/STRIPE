@@ -1285,8 +1285,8 @@
 }
 
 #part2,
-#part8,
-#part7 {
+#part9,
+#part8 {
   background-color: var(--background-color);
 }
 
@@ -1529,5 +1529,84 @@ picture {
   height: 32px;
 }
 
+/* #region part6 */
+#part6 {
+  background-color: rgb(13, 23, 56);
+}
+#for-developers {
+  padding: 96px 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 64px;
+}
+#dev1 {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+#dev1 > div {
+  padding-right: 8px;
+  max-width: 856px;
+}
+
+#dev1 h2 {
+  font-size: 28px;
+  display: inline;
+  color: white;
+}
+#dev1 p {
+  display: inline;
+  font-size: 28px;
+  color: rgb(131, 155, 200);
+}
+.dev_button {
+  text-decoration: none;
+  color: white;
+}
+#dev1 div:nth-child(2) {
+  display: flex;
+  gap: 8px;
+}
+
+#dev1 div:nth-child(2) a:first-child {
+  padding: 15.5px 24px 16.5px 24px;
+  background-color: var(--color-purple);
+  border: 1px solid transparent;
+  border-radius: 4px;
+  transition: background-color 0.3s ease-in-out;
+}
+
+#dev1 div:nth-child(2) a:first-child:hover {
+  background-color: #7a63ff;
+}
+
+#dev1 div:nth-child(2) a:nth-child(2) {
+  padding: 15.5px 24px 16.5px 24px;
+  border: 1px solid rgba(109, 94, 221, 0.698);
+  border-radius: 4px;
+  transition: border-color 0.3s ease-in-out;
+}
+
+#dev1 div:nth-child(2) a:nth-child(2):hover {
+  border-color: rgb(57, 36, 221);
+}
+#for-developers > :nth-child(2) {
+  border: 1px solid rgb(230, 235, 241);
+  margin-left: -16px;
+  margin-right: -16px;
+}
+#dev2 {
+  max-width: 752px;
+  padding-right: 40px;
+}
+#dev2 span {
+  color: white;
+  font-size: 26px;
+}
+#dev2 h2 {
+  color: rgb(131, 155, 200);
+  font-size: 26px;
+}
+/* #endregion part6 */
 /* #endregion contactsales */
 /* #endregion section5 */
